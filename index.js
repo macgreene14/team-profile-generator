@@ -144,7 +144,8 @@ function addEmployee() {
             addEmployee(); // restart function
           });
       }
-    });
+    })
+    .catch(() => console.log("Application Complete."));
 }
 
 // run main function
