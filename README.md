@@ -36,7 +36,7 @@ https://user-images.githubusercontent.com/33014789/191271979-7c2b22b6-d8fc-4477-
 
   ## Badges
   
-  ![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
+  ![Application Type](https://img.shields.io/badge/Application%20Type-Command%20Line-blue)
 
   ## Contributing
   
