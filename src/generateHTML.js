@@ -19,15 +19,15 @@ function generateHTML(employees) {
                   <img src="https://www.svgrepo.com/show/92072/manager.svg" alt="Placeholder image">
                 </figure>
                 <div class="media-content">
-                  <p class="title is-4">${employee.name}</p>
+                  <p class="title is-4">${employee.getName()}</p>
                   <p class="subtitle is-6">${employee.constructor.name}</p>
                 </div>
                 <div class="content">
-                  Employee ID: ${employee.name}
+                  Employee ID: ${employee.getId()}
                   <br>
-                  Email: <a href="mailto: ${employee.email}">${employee.email}</a>
+                  Email: <a href="mailto: ${employee.getEmail()}">${employee.getEmail()}</a>
                   <br>
-                  Office Number: ${employee.officeNumber} 
+                  Office Number: ${employee.getOfficeNumber()} 
                 </div>
             </div>  
           </div>
@@ -45,15 +45,15 @@ function generateHTML(employees) {
                   <img src="https://www.svgrepo.com/show/203540/engineer-worker.svg" alt="Placeholder image">
                 </figure>
                 <div class="media-content">
-                  <p class="title is-4">${employee.name}</p>
+                  <p class="title is-4">${employee.getName()}</p>
                   <p class="subtitle is-6">${employee.constructor.name}</p>
                 </div>
                 <div class="content">
-                  Employee ID: ${employee.name}
+                  Employee ID: ${employee.getId()}
                   <br>
-                  Email: <a href="mailto: ${employee.email}">${employee.email}</a>
+                  Email: <a href="mailto: ${employee.getEmail()}">${employee.getEmail()}</a>
                   <br>
-                  Github: <a href="https://github.com/${employee.github}">${employee.github}</a>
+                  Github: <a href="https://github.com/${employee.getGithub()}">${employee.getGithub()}</a>
                 </div>
             </div>  
           </div>
@@ -71,15 +71,15 @@ function generateHTML(employees) {
                   <img src="https://www.svgrepo.com/show/64796/student-woman.svg" alt="Placeholder image">
                 </figure>
                 <div class="media-content">
-                  <p class="title is-4">${employee.name}</p>
+                  <p class="title is-4">${employee.getName()}</p>
                   <p class="subtitle is-6">${employee.constructor.name}</p>
                 </div>
                 <div class="content">
-                  Employee ID: ${employee.name}
+                  Employee ID: ${employee.getId()}
                   <br>
-                  Email: <a href="mailto: ${employee.email}">${employee.email}</a>
+                  Email: <a href="mailto: ${employee.getEmail()}">${employee.getEmail()}</a>
                   <br>
-                  Office school: ${employee.school} 
+                  Office school: ${employee.getSchool()} 
                 </div>
             </div>  
           </div>

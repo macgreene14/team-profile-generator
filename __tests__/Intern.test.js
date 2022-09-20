@@ -18,8 +18,8 @@ describe("Intern Class", () => {
     it("Intern getEmail method", () => {
       expect(internInstance.getEmail()).toEqual(a3);
     }),
-    it("Intern getSchoolName method", () => {
-      expect(internInstance.getSchoolName()).toEqual(a4);
+    it("Intern getSchool method", () => {
+      expect(internInstance.getSchool()).toEqual(a4);
     }),
     it("Intern getRole method", () => {
       expect(internInstance.getRole()).toEqual("Intern");
