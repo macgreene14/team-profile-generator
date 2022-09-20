@@ -6,19 +6,6 @@ function generateHTML(employees) {
 
   let cardStack = "";
 
-  // construct cards, iterate through key and value
-  // for (let employee of employees) {
-  //   let info = `<p class="card-header">${employee.constructor.name}</p>`;
-  //   for (const [key, value] of Object.entries(employee)) {
-  //     info = info + `<p class="card-content">${key}: ${value}</p>`;
-  //   }
-  //   let card = `
-  //   <div style="margin:2%;" class="card">
-  //       ${info}
-  //   </div>`;
-  //   cardStack = cardStack + card;
-  // }
-
   // generate card based on employee type
   for (let employee of employees) {
     if (employee.constructor.name === "Manager") {
@@ -29,7 +16,7 @@ function generateHTML(employees) {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  <img src="https://www.svgrepo.com/show/92072/manager.svg" alt="Placeholder image">
                 </figure>
                 <div class="media-content">
                   <p class="title is-4">${employee.name}</p>
@@ -38,7 +25,7 @@ function generateHTML(employees) {
                 <div class="content">
                   Employee ID: ${employee.name}
                   <br>
-                  Email: <a href="#">${employee.email}</a>
+                  Email: <a href="mailto: ${employee.email}">${employee.email}</a>
                   <br>
                   Office Number: ${employee.officeNumber} 
                 </div>
@@ -55,7 +42,7 @@ function generateHTML(employees) {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  <img src="https://www.svgrepo.com/show/203540/engineer-worker.svg" alt="Placeholder image">
                 </figure>
                 <div class="media-content">
                   <p class="title is-4">${employee.name}</p>
@@ -64,9 +51,9 @@ function generateHTML(employees) {
                 <div class="content">
                   Employee ID: ${employee.name}
                   <br>
-                  Email: <a href="#">${employee.email}</a>
+                  Email: <a href="mailto: ${employee.email}">${employee.email}</a>
                   <br>
-                  Github: <a href="${employee.github}">${employee.github}</a>
+                  Github: <a href="https://github.com/${employee.github}">${employee.github}</a>
                 </div>
             </div>  
           </div>
@@ -81,7 +68,7 @@ function generateHTML(employees) {
             <div class="media">
               <div class="media-left">
                 <figure class="image is-48x48">
-                  <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                  <img src="https://www.svgrepo.com/show/64796/student-woman.svg" alt="Placeholder image">
                 </figure>
                 <div class="media-content">
                   <p class="title is-4">${employee.name}</p>
@@ -90,7 +77,7 @@ function generateHTML(employees) {
                 <div class="content">
                   Employee ID: ${employee.name}
                   <br>
-                  Email: <a href="#">${employee.email}</a>
+                  Email: <a href="mailto: ${employee.email}">${employee.email}</a>
                   <br>
                   Office school: ${employee.school} 
                 </div>
@@ -115,6 +102,9 @@ function generateHTML(employees) {
       <style>
         #card {
           border-style: solid;
+          margin: 50px;
+          width: 100%;
+
         }
         #cardContainer {
           width: 100%;
@@ -124,8 +114,13 @@ function generateHTML(employees) {
           flex-direction: column;
           flex-wrap: wrap;
           justify-content: space-evenly;
-          padding: 10%;
+          padding: 50px;
           align-content: stretch;
+        }
+        .navbar-brand {
+          text-align: center;
+          display: block;
+          width: 100%;
         }
       </style>
   </head>

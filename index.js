@@ -12,7 +12,6 @@ const generateHTML = require("./src/generateHTML.js");
 const employees = [];
 
 // prompt users for inputs for Manager class
-
 function main() {
   // add manager
   inquirer
@@ -89,7 +88,7 @@ function addEmployee() {
             {
               type: "input",
               name: "engineerGithub",
-              message: "Add Github URL",
+              message: "Add Github Profile",
             },
           ])
           .then((a) => {
